@@ -1,1 +1,25 @@
 // Mixins Here
+.flexColumn(){
+  display: flex;
+  flex-direction: column;
+}
+.flexCenter(){
+  display: flex;
+  justify-content: center;
+}
+
+// Parametric Mixins
+.createButton(@width, @height, @font-color, @background-color: @btn-bg-color, @radius:10px, @font-size-btn) {
+  width: @width;
+  height: @height;
+  color: @font-color;
+  background-color: @background-color;
+  border: 1px solid @btn-bg-color;
+  border-radius: @radius;
+  text-align: center;
+  font-size: @font-size-btn;
+  &:hover{
+    background-color: white;
+    color: @background-color;
+  }
+}
