@@ -160,6 +160,45 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1% 0%;
+  background-color: #F6F6F6;
+  border: 1px solid #F1F1F1;
+}
+nav .navFlex1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0% auto;
+  width: 100%;
+}
+nav .navFlex2 {
+  display: flex;
+  justify-content: center;
+  flex-basis: 25%;
+  flex-basis: 100%;
+  font-size: 5rem;
+  margin-bottom: 2%;
+}
+nav .navFlex3 {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  font-size: 1.25rem;
+}
+nav .navFlex3 div {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 65%;
+  font-size: 1.6rem;
+}
+nav .navFlex3 a {
+  color: #5E6164;
+  font-family: #454A59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +208,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -211,6 +253,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  width: 25%;
+  height: 3vh;
+  color: white;
+  background-color: #23293B;
+  border: 1px solid #22283A;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: white;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;
