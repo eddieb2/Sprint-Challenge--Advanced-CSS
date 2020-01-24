@@ -2,9 +2,12 @@
 nav{
   .flexCenter();
   width: 100%;
-  padding: 1% 0%;
+  padding: .7% 0%;
   background-color: @nav-bg;
   border: 1px solid @nav-border;
+  @media @phone{
+    padding: 2% 0%;
+  }
   .navFlex1{
     .flexColumn();
     max-width: 800px;
@@ -27,16 +30,18 @@ nav{
     font-size: 1.25rem;
     div{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-basis: 65%;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
+      font-weight: 600;
       @media @phone{
-        flex-basis: 100%;
+        flex-basis: 73%;
       }
     }
     a{
       color: @main-font-color;
       font-family: @nav-font;
+      text-decoration: none;
     }
   }
 }

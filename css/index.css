@@ -164,9 +164,14 @@ nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 1% 0%;
+  padding: 0.7% 0%;
   background-color: #F6F6F6;
   border: 1px solid #F1F1F1;
+}
+@media (max-width:500px) {
+  nav {
+    padding: 2% 0%;
+  }
 }
 nav .navFlex1 {
   display: flex;
@@ -196,18 +201,20 @@ nav .navFlex3 {
 }
 nav .navFlex3 div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-basis: 65%;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 @media (max-width:500px) {
   nav .navFlex3 div {
-    flex-basis: 100%;
+    flex-basis: 73%;
   }
 }
 nav .navFlex3 a {
   color: #5E6164;
   font-family: #454A59;
+  text-decoration: none;
 }
 footer {
   color: #22283B;
@@ -218,6 +225,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+}
+@media (max-width:500px) {
+  footer {
+    font-weight: 700;
+  }
 }
 .home .intro img {
   border-radius: 5px;
@@ -243,6 +256,8 @@ footer {
 @media (max-width:500px) {
   .home .space-images .blast {
     width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 .home .space-images img {
@@ -250,6 +265,11 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images img {
+    border-radius: 30px;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -271,8 +291,9 @@ footer {
   .home .walk {
     margin-top: 5%;
     padding-top: 5%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 4%;
     display: flex;
     flex-direction: column;
   }
@@ -293,7 +314,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn button {
-  width: 25%;
+  width: 30%;
   height: 3vh;
   color: white;
   background-color: #23293B;
@@ -342,4 +363,11 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-img img {
+    border-radius: 15px;
+  }
 }
